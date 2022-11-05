@@ -1,0 +1,177 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: poppins;
+	 
+	
+}
+body{
+	background-image: url("../images/grey.jpg");
+	
+}
+.about-1{
+	margin: 40px;
+	padding: 60px;
+
+}
+
+.about-1 h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	margin: 0;
+	
+}
+
+.about-1 p{
+	text-align: center;
+	padding: 3px;
+	color: black;
+}
+
+.about-item{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	background-color: white;
+	padding: 80px,30px;
+	box-shadow: 0 0 9px rgba(0,0,0 .6);
+}
+
+.about-item i{
+	font-size: 43px;
+	margin-top: 30px;
+	
+}
+
+.about-item h3{
+	font-size: 25px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+.about-item hr{
+	width: 46px;
+	height: 3px;
+	background-color: darkolivegreen;
+	margin: 0 auto;
+	border: nome;
+}
+.about-item p{
+	margin-top: 20px;
+	padding-bottom: 35px;
+}
+.about-item:hover{
+	background-color: darkolivegreen;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+	color: #fff;
+}
+.about-item:hover hr{
+	background-color: #fff;
+}
+.about-item:hover i{
+	transform: translateY(-20px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+	transition: all 400ms ease-in-out;
+}
+
+.about-3 h1{
+	text-align: center;
+	margin: 50px auto 100px;
+	color: black;
+}
+.main{
+	width: 100%;
+	min-height: 380px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.service{
+	background: white;
+	padding: 30px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 0 20px -15px black;
+	z-index: 1;
+	transition: transform .7s;
+	
+}
+.service-logo{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 10px solid darkolivegreen;
+	margin: -90px auto 0;
+	background: white;
+}
+
+.service-logo img{
+	width: 50px;
+	margin-top: 30px;
+}
+.service h4{
+	height: 35px;
+	width: 80%;
+	background: white;
+	margin: 50px auto;
+	position: relative;
+}
+.service h4::after{
+	content: '';
+	width: 40px;
+	height: 30px;
+	background: linear-gradient(to right, white, darkolivegreen);
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	z-index: -1;
+}
+.service h4::before{
+	content: '';
+	width: 40px;
+	height: 30px;
+	background: linear-gradient(to right, darkolivegreen, white);
+	position: absolute;
+	left: -5px;
+	bottom: -5px;
+	z-index: -1;
+}
+.shadow1{
+	height: 200px;
+	width: 80%;
+	background: white;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 10%;
+	z-index: -1;
+	box-shadow: 0 0 20px -15px black; 
+	transition: transform .7s;
+}
+.shadow2{
+	height: 200px;
+	width: 64%;
+	background: white;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 18%;
+	z-index: -2;
+}
+
+.main:hover .service{
+	transform: translateY(-50px);
+}
+
+.main:hover .shadow1{
+	transform: translateY(-25px);
+}

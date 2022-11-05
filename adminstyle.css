@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins';
+}
+
+body{
+	width: 100;
+	background: #E5E7EB;
+	position: relative;
+	display: flex;
+	
+	
+
+
+}
+
+#menu{
+	background: #073247;
+	width: 300px;
+	height: 100%;
+}
+
+#menu .logo{
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+	width: 40px;
+	margin-right: 15px
+}
+
+
+
+#menu .items{
+	margin-top: 40px;
+}
+
+#menu .items li{
+	list-style: none;
+	padding: 15px 0;
+	transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+	background: #4D8778;
+	cursor: pointer;
+}
+
+#menu .items li:nth-child(1){
+	border-left: 4px solid #fff;
+}
+#menu .items li:nth-child(2){
+	border-left: 4px solid #fff;
+}
+#menu .items li:nth-child(3){
+	border-left: 4px solid #fff;
+}
+#menu .items li:nth-child(4){
+	border-left: 4px solid #fff;
+}
+#menu .items li:nth-child(5){
+	border-left: 4px solid #fff;
+}
+
+#menu .items li i{
+	color: rgba(105,160,217,1.00);
+	width: 30px;
+	height: 40px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a{
+	color: #989898
+}
+
+#menu .items li a{
+	text-decoration: none;
+	color: rgba(105,160,217,1.00);
+	font-weight: 300px;
+	transition: 0.3s ease;
+		
+}
+
+#interface{
+	width: calc(100% - 300px);
+}
+
+#interface .navigation .n1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	padding: 15px 30px;
+	border-bottom: 3px solid #2EED44;
+}
+
+#interface .navigation .search{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 14px;
+	border: 1px solid #d7dbe6;
+	border-radius: 4px;
+}
+
+#interface .navigation .search i{
+	margin-right: 14px;
+}
+
+#interface .navigation .search input{
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+
+#interface .navigation .profile{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#interface .navigation .profile i{
+	margin: 20px;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+#interface .navigation .profile img{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.i-name {
+	color: rgba(105,160,217,1.00);
+	padding: 20px 20px 0 20px;
+	margin: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	
+}
+
+.values {
+    padding: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+	
+}
+
+.values .val-box {
+	background: #fff;
+	width: 235px;
+	padding: 16px 20px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.values .val-box i{
+	font-size: 25px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #65BD0E;
+	margin-right: 15px;
+}
+
+.values .val-box h3{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.values .val-box span{
+	font-size: 15px;
+	color: slategrey;
+}
+
+ .bar-chart{
+	width: 600px;
+	height: 300px;
+	display: block;
+	padding-left: 50px;
+	
+	margin: 40px;
+	
+	 
+   
+}
+
+.numbers{
+	color: darkgreen;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+ .numbers li{
+	list-style: none;
+	height: 70px;
+	position: relative;
+	bottom: 50px;
+}
+
+ .numbers span{
+	font-size: 12px;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+
+.bars{
+	color: darkgreen;
+	font-size: 12px;
+	font-weight: 600;
+	background: #fff ;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 500px;
+	height: 300px;
+	box-shadow: 0 0 10px 0 #555;
+	border-radius: 5px; 
+}
+
+.bars li{
+	display: table-cell;
+	width: 120px;
+	height: 300px;
+	position: relative;
+}
+
+.bars span{
+	width: 100%;
+	position: absolute;
+	bottom: -30px;
+	text-align: center;
+}
+
+.bars .bar{
+	display: block;
+	background: #17C0EB;
+	width: 50px;
+	
+	position:absolute;
+	bottom: 0;
+	margin-left: 25px;
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(23,192,235,0.5);
+	transition: 0.5s;
+	transition-property: background, box-shadow;
+}
+
+.bars .bar:hover{
+	background: #55EFC4;
+	box-shadow: 0 0 10px 0 rgba(85,239,196,0.5);
+	cursor: pointer;
+}
+
+.bars .bar:before{
+	color: darkgreen;
+	content: attr(data-percentage) '%';
+	position: relative;
+	bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
